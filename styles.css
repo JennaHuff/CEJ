@@ -1,0 +1,79 @@
+body {
+    --accent-color: hsl(249, 100%, 67%);
+    --accent-color-hovered: hsl(249, 100%, 58%);
+    margin: 0.5em;
+    padding: 0;
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family:
+        system-ui,
+        -apple-system,
+        BlinkMacSystemFont,
+        "Segoe UI",
+        Roboto,
+        Oxygen,
+        Ubuntu,
+        Cantarell,
+        "Open Sans",
+        "Helvetica Neue",
+        sans-serif;
+}
+#activitiesUl {
+    list-style: none;
+}
+#activitiesUl > li {
+    display: flex;
+    gap: 0.5em;
+    padding-bottom: 0.5em;
+}
+#mailForm {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+}
+#mailForm > button {
+    align-self: center;
+    width: fit-content;
+    padding: 8px 18px;
+    min-height: 36px;
+    color: white;
+    background-color: var(--accent-color);
+    border-radius: 40px;
+    font-weight: normal;
+}
+#mailForm > button:hover {
+    transition: all 0.2s ease-in-out;
+}
+button:hover {
+    transition: all 0.2s ease-in-out;
+    color: white;
+    border: 2px solid var(--accent-color-hovered) !important;
+    background-color: var(--accent-color-hovered) !important;
+}
+button {
+    color: var(--accent-color);
+    border: 2px solid var(--accent-color);
+    font-weight: bold;
+    width: 25px;
+    height: 25px;
+
+    border-radius: 50%;
+    transition-property: background-color;
+    transition-duration: 200ms;
+}
+input {
+    border: 2px solid var(--accent-color);
+    padding: 8px 18px;
+    border-radius: 40px;
+    margin-right: 0.5em;
+}
+textarea {
+    width: 80%;
+    align-self: center;
+    border: none;
+    border-radius: 12px;
+    padding: 18px;
+    box-shadow: 0px 4px 12px rgba(60, 64, 67, 0.24);
+}

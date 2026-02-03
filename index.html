@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="./styles.css" />
+        <script type="text/javascript" src="./scripts.js" defer></script>
+        <title>Récap CEJ</title>
+    </head>
+    <body>
+        <h1 id="hours-remaining"></h1>
+        <form id="newActivityForm">
+            <input
+                placeholder="Nouvelle activité"
+                type="text"
+                id="newOption"
+                name="newOption"
+                required
+            />
+            <button type="submit">⏎</button>
+        </form>
+        <ul id="activitiesUl"></ul>
+        <form id="mailForm">
+            <label for="mail"
+                >Ecrire {liste} là où vous voulez inserer la liste d'activités
+            </label>
+            <textarea
+                id="mailTextArea"
+                name="mail"
+                rows="20"
+                cols="50"
+            ></textarea>
+            <button type="submit">Copier</button>
+        </form>
+    </body>
+</html>

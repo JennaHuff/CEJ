@@ -1,0 +1,9 @@
+version: "3.8"
+
+services:
+    web:
+        container_name: projet-anton
+        build: .
+        ports:
+            - "10001:80"
+        restart: unless-stopped
